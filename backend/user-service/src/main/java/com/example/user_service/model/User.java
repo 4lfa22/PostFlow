@@ -1,4 +1,4 @@
-package com.example.user_service.modelo;
+package com.example.user_service.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -15,15 +15,17 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    @Column(nullable = false)
-    private String nombre;
-    @Column(nullable = false)
-    private String apellidos;
+    private long id;
     @Column(nullable = false, unique = true)
-    private String correo;
-    @Column(length = 9, nullable = false)
-    private String telefono;
+    private String username;
     @Column(nullable = false)
-    private String contrasena;
+    private String name;
+    @Column(nullable = false)
+    private String lastname;
+    @Column(nullable = false, unique = true)
+    private String email;
+    @Column(length = 9, nullable = false)
+    private String telephone;
+    @Column(nullable = false)
+    private String password;
 }
