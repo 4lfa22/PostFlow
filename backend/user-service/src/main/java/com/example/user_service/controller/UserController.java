@@ -1,5 +1,6 @@
 package com.example.user_service.controller;
 
+import com.example.user_service.dto.CreateUserDto;
 import com.example.user_service.dto.UserDto;
 import com.example.user_service.service.UserService;
 import jakarta.validation.Valid;
