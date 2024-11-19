@@ -16,7 +16,8 @@ public class CreateUserDto {
     @NotBlank
     private String name;
 
-    @NotBlank String lastname;
+    @NotBlank
+    private String lastname;
 
     @NotBlank
     @Email
