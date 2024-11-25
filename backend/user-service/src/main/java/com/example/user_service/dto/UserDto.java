@@ -5,7 +5,6 @@ import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 @Data
 @Builder
 public class UserDto {
